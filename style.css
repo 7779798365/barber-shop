@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+  }
+  
+  .navbar {
+    background: #111;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links li a:hover {
+    color: #c59d5f;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url(backgroundpic.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    background: #c59d5f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #a17842;
+  }
+  
+  .section  {
+    padding: 120px 0;
+    background-image: url(services.jpg) ;
+  
+  }
+  
+  .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+    
+  }
+  
+  .service-grid,
+  .pricing-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+  }
+  
+  .service-item,
+  .pricing-item {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .service-item h3,
+  .pricing-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .service-item p,
+  .pricing-item p {
+    
+    font-size: 16px;}
+   
+    .service-item h3:hover{
+      color:#c59d5f ;
+      
+    }
+    .section-title:hover{
+      color: #c59d5f;
+    }
+    .pricing-item:hover{
+      color: #c59d5f;
+    }
